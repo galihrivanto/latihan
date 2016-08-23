@@ -5,7 +5,7 @@ import (
 )
 
 func TestGetChildURLs(t *testing.T) {
-	urls, err := getChildURLs("https://google.com")
+	urls, err := GetChildURLs("https://google.com")
 	if err != nil {
 		t.Error(err)
 		return
@@ -15,7 +15,7 @@ func TestGetChildURLs(t *testing.T) {
 }
 
 func TestGetChildURLsWithDomain(t *testing.T) {
-	urls, err := getChildURLs("https://google.com", "google.com")
+	urls, err := GetChildURLs("https://google.com", "google.com")
 	if err != nil {
 		t.Error(err)
 		return
