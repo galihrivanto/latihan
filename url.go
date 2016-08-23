@@ -9,7 +9,7 @@ import (
 )
 
 // getChildURLs ambil child links dari alamat yg  diberikan
-func getChildURLs(url string, domain ...string) ([]string, error) {
+func GetChildURLs(url string, domain ...string) ([]string, error) {
 
 	// setup http client
 	// pakai "GET" request
